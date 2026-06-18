@@ -2,6 +2,7 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
 import heroImg from './assets/hero.png'
+import profileImg from './assets/profile.jpg'
 import './App.css'
 
 function App() {
@@ -11,12 +12,10 @@ function App() {
     <>
       <section id="center">
         <div className="hero">
-          <img src={heroImg} className="base" width="170" height="179" alt="" />
-          <img src={reactLogo} className="framework" alt="React logo" />
-          <img src={viteLogo} className="vite" alt="Vite logo" />
+          <img src={profileImg} className="profile" alt="Profile" />
         </div>
         <div>
-          <h1>Jims cool</h1>
+          <h1>Jared's cool</h1>
           <p>
             Edit <code>src/App.jsx</code> and save to test <code>HMR</code>
           </p>
@@ -62,7 +61,7 @@ function App() {
           <p>Join the Vite community</p>
           <ul>
             <li>
-              <a href="https://github.com/vitejs/vite" target="_blank">
+              <a href="https://github.com/Jgarrison120/jared-web" target="_https://www.linkedin.com/in/jared-garrison/">
                 <svg
                   className="button-icon"
                   role="presentation"
@@ -86,15 +85,15 @@ function App() {
               </a>
             </li>
             <li>
-              <a href="https://x.com/vite_js" target="_blank">
+              <a href="https://www.linkedin.com/in/jared-garrison-7525861a0/" target="_blank">
                 <svg
                   className="button-icon"
                   role="presentation"
                   aria-hidden="true"
                 >
-                  <use href="/icons.svg#x-icon"></use>
+                  <use href="/icons.svg#linkedin-icon"></use>
                 </svg>
-                X.com
+                LinkedIn
               </a>
             </li>
             <li>
