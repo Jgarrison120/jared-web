@@ -55,55 +55,8 @@ function Dashboard() {
               </span>
             </div>
           </section>
-          {/* SKILLS SECTION */}
-<section id="skills" className="mt-14">
-  <h2 className="mb-6 text-3xl font-bold">Skills & Expertise</h2>
 
-  <div className="rounded-2xl border border-white/10 bg-white/5 backdrop-blur-xl p-8">
-    <p className="text-slate-400 mb-6">
-      Core QA engineering capabilities across manual, API, automation,
-      and release validation workflows.
-    </p>
 
-    <div className="flex flex-wrap gap-3">
-      {[
-        "Manual Testing",
-        "Exploratory Testing",
-        "Regression Testing",
-        "API Testing",
-        "Postman",
-        "Bruno",
-        "Jira",
-        "Cypress",
-        "SDLC",
-        "Agile/Scrum",
-        "Test Planning",
-        "Defect Management",
-        "508 Accessibility",
-        "Release Readiness",
-        "Cross-Team QA"
-      ].map((skill) => (
-        <span
-          key={skill}
-          className="
-            rounded-full
-            border
-            border-cyan-500/20
-            bg-cyan-500/10
-            px-4
-            py-2
-            text-sm
-            text-cyan-300
-            hover:bg-cyan-500/20
-            transition
-          "
-        >
-          {skill}
-        </span>
-      ))}
-    </div>
-  </div>
-</section>
           {/* KPI Cards */}
           <section className="mt-8">
             <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
@@ -202,6 +155,55 @@ function Dashboard() {
                 </ul>
               </div>
             </div>
+            {/* SKILLS SECTION */}
+<section id="skills" className="mt-14">
+  <h2 className="mb-6 text-3xl font-bold">Skills & Expertise</h2>
+
+  <div className="rounded-2xl border border-white/10 bg-white/5 backdrop-blur-xl p-8">
+    <p className="text-slate-400 mb-6">
+      Core QA engineering capabilities across manual, API, automation,
+      and release validation workflows.
+    </p>
+
+    <div className="flex flex-wrap gap-3">
+      {[
+        "Manual Testing",
+        "Exploratory Testing",
+        "Regression Testing",
+        "API Testing",
+        "Postman",
+        "Bruno",
+        "Jira",
+        "Cypress",
+        "SDLC",
+        "Agile/Scrum",
+        "Test Planning",
+        "Defect Management",
+        "508 Accessibility",
+        "Release Readiness",
+        "Cross-Team QA"
+      ].map((skill) => (
+        <span
+          key={skill}
+          className="
+            rounded-full
+            border
+            border-cyan-500/20
+            bg-cyan-500/10
+            px-4
+            py-2
+            text-sm
+            text-cyan-300
+            hover:bg-cyan-500/20
+            transition
+          "
+        >
+          {skill}
+        </span>
+      ))}
+    </div>
+  </div>
+</section>
           </section>
           <section id="certifications" className="mt-14">
   <h2 className="mb-6 text-3xl font-bold">Certifications</h2>

@@ -1,4 +1,8 @@
+import { useState } from "react";
+
 function Sidebar() {
+  const [active, setActive] = useState("overview");
+
   const navItems = [
     "Overview",
     "Experience",
@@ -6,6 +10,14 @@ function Sidebar() {
     "Projects",
     "Certifications",
   ];
+
+  const focusContent = {
+  overview: "QA Leadership • Metrics • Delivery",
+  experience: "8+ Years • 30+ Engineers Supported",
+  skills: "API Testing • Jira • Cypress",
+  projects: "Testing Strategy • Quality Initiatives",
+  certifications: "AWS • Scrum • Professional Growth",
+};
 
   return (
    <aside className="
@@ -30,7 +42,7 @@ function Sidebar() {
             text-transparent
           "
         >
-          QA Command Center
+          QA Engineer Portfolio
         </h1>
 
         <p className="mt-2 text-sm text-slate-400">
@@ -80,30 +92,36 @@ function Sidebar() {
       </div>
 
       {/* Navigation */}
-      <nav className="mt-8 space-y-2">
-        {navItems.map((item, index) => (
-          <a
-            key={item}
-            href={`#${item.toLowerCase()}`}
-            className={`
-              flex
-              items-center
-              rounded-xl
-              px-4
-              py-3
-              transition-all
-              duration-300
-              ${
-                index === 0
-                  ? "bg-cyan-500/15 text-cyan-300 border border-cyan-500/20"
-                  : "text-slate-400 hover:bg-white/5 hover:text-white"
-              }
-            `}
-          >
-            {item}
-          </a>
-        ))}
-      </nav>
+     <nav className="mt-8 space-y-2">
+  {navItems.map((item) => {
+    const id = item.toLowerCase();
+    const isActive = active === id;
+
+    return (
+      <a
+        key={item}
+        href={`#${id}`}
+        onClick={() => setActive(id)}
+        className={`
+          flex
+          items-center
+          rounded-xl
+          px-4
+          py-3
+          transition-all
+          duration-300
+          ${
+            isActive
+              ? "bg-cyan-500/15 text-cyan-300 border border-cyan-500/20"
+              : "text-slate-400 hover:bg-white/5 hover:text-white"
+          }
+        `}
+      >
+        {item}
+      </a>
+    );
+  })}
+</nav>
 
       {/* Bottom Card */}
       <div
@@ -124,7 +142,7 @@ function Sidebar() {
         </p>
 
         <p className="mt-2 text-sm text-slate-300">
-          API Testing • Accessibility • Release Readiness
+        {focusContent[active]}
         </p>
       </div>
     </aside>
