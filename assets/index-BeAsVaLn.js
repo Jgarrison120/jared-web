@@ -40,7 +40,7 @@ Error generating stack: `+e.message+`
               bg-cyan-500/20\r
               text-cyan-400\r
               font-bold\r
-            `,children:`JG`}),(0,x.jsxs)(`div`,{children:[(0,x.jsx)(`p`,{className:`font-medium`,children:`Senior QA Engineer`}),(0,x.jsx)(`p`,{className:`text-sm text-slate-400`,children:`8+ Years Experience`})]})]})}),(0,x.jsx)(`nav`,{className:`mt-8 space-y-2`,children:[`Overview`,`Experience`,`Skills`,`Projects`,`Certifications`].map(n=>{let r=n.toLowerCase(),i=e===r;return(0,x.jsx)(`a`,{href:`#${r}`,onClick:()=>t(r),className:`
+            `,children:`JG`}),(0,x.jsxs)(`div`,{children:[(0,x.jsx)(`p`,{className:`font-medium`,children:`Senior QA Engineer`}),(0,x.jsx)(`p`,{className:`text-sm text-slate-400`,children:`8+ Years Experience`})]})]})}),(0,x.jsx)(`nav`,{className:`mt-8 space-y-2`,children:[`Overview`,`Experience`,`Skills`,`Certifications`].map(n=>{let r=n.toLowerCase(),i=e===r;return(0,x.jsx)(`a`,{href:`#${r}`,onClick:()=>t(r),className:`
           flex
           items-center
           rounded-xl
