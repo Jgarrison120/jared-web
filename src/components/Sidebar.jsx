@@ -7,7 +7,6 @@ function Sidebar() {
     "Overview",
     "Experience",
     "Skills",
-    "Projects",
     "Certifications",
   ];
 
